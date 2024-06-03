@@ -282,3 +282,142 @@ footer div ul li a,footer div p{
     color: var(--white);
     text-align: end;
 }
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    .container-1140{
+        max-width: 760px;
+    }
+    /* Header */
+    header nav ul{
+        display: none;
+    }
+    .fa-bars{
+        color: var(--black);
+        display: block;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    /* Section 1 */
+    /* Section2 */
+    #s2 > div{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    #s2 > div>div{
+        margin-top: 30px;
+    }
+    /* Section 3 */
+    #s3{
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    /* Section 4 */
+    #gridS4 {
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    #gridS4 > img:nth-child(1),
+    #gridS4 > img:nth-child(2),
+    #gridS4 > img:nth-child(3),
+    #gridS4 > img:nth-child(4),
+    #gridS4 > img:nth-child(5),
+    #gridS4 > img:nth-child(6){
+        grid-column: auto;
+    }
+    #gridS4 > img:nth-child(7){
+        grid-column: 1/3;
+    }
+    /* Section 5 */
+    #s5{
+        flex-direction: column;
+        text-align: center;
+    }
+    /* Footer */
+    footer{
+        padding-top: 10px;
+    }
+    footer > div {
+        max-width: 200px;
+    }
+    footer ul{
+        flex-direction: column;
+    }
+}
+/* Responsive Telephone */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .container-1140{
+        max-width: 320px;
+    }
+    /* Header */
+    header nav ul{
+        display: none;
+    }
+    .fa-bars{
+        color: var(--black);
+        display: block;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    /* Section 1 */
+    /* Section2 */
+    #s2 > div{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    #s2 > div>div{
+        margin-top: 30px;
+    }
+    /* Section 3 */
+    #s3{
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    #s3 > div{
+        grid-template-columns: 1fr;
+    }
+    #s3 > div > article:nth-child(1), #s3 > div > article:nth-child(4) {
+        grid-column: initial;
+    }
+    /* Section 4 */
+    #gridS4 {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    #gridS4 > img:nth-child(1),
+    #gridS4 > img:nth-child(2),
+    #gridS4 > img:nth-child(3),
+    #gridS4 > img:nth-child(4),
+    #gridS4 > img:nth-child(5),
+    #gridS4 > img:nth-child(6),
+    #gridS4 > img:nth-child(7){
+        grid-column: auto;
+        width: 330px;
+        height: 150px;
+    }
+    /* Section 5 */
+    #s5{
+        flex-direction: column;
+        text-align: center;
+    }
+    #s5 form {
+        grid-template-columns: 1fr;
+    }
+    #s5 form > button,#s5 form > textarea{
+        grid-column: initial;
+    }
+    /* Footer */
+    footer{
+        padding-top: 10px;
+    }
+    footer > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 200px;
+    }
+    footer ul{
+        flex-direction: column;
+    }
+}

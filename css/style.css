@@ -135,19 +135,13 @@ header nav ul{
     padding: 50px 0px;
     margin: 0px;
 }
-#s2>div{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    gap: 20px;
-}
 #s2 h2, #s2 p{
     margin-bottom: 25px;
 }
 #s2 div{
     display: grid;
     gap: 20px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
 }
 /* Section 3 */
 #s3{
@@ -282,7 +276,9 @@ footer div ul li a,footer div p{
     color: var(--white);
     text-align: end;
 }
-
+@media only screen and (min-width: 1024px) and (max-width:1400) {
+    
+}
 @media only screen and (min-width: 768px) and (max-width:1024px) {
     .container-1140{
         max-width: 760px;
@@ -298,6 +294,13 @@ footer div ul li a,footer div p{
         margin-right: 20px;
     }
     /* Section 1 */
+    #s1{
+        padding: 10px;
+        height: 200px;
+    }
+    #s1 article{
+        width: 100%;
+    }
     /* Section2 */
     #s2 > div{
         text-align: center;
@@ -360,6 +363,13 @@ footer div ul li a,footer div p{
         margin-right: 20px;
     }
     /* Section 1 */
+    #s1{
+        padding: 10px;
+        height: 250px;
+    }
+    #s1 article{
+        width: 100%;
+    }
     /* Section2 */
     #s2 > div{
         text-align: center;
